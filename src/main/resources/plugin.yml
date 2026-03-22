@@ -1,0 +1,7 @@
+name: StrafeScheduler
+version: 1.0
+main: strafeland.club.strafescheduler.Main
+api-version: 1.13
+authors: [zNotHydr0]
+description: StrafeScheduler 1.0. Created by [zNotHydr0]
+website: www.strafeland.club

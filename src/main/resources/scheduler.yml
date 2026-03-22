@@ -1,0 +1,44 @@
+schedules:
+  task_minutely:
+    enabled: false
+    type: MINUTELY
+    commands:
+      - "say A minute has passed."
+  task_hourly:
+    enabled: false
+    type: HOURLY
+    minute: 0
+    commands:
+      - "say An hour has passed."
+  task_daily:
+    enabled: false
+    type: DAILY
+    hour: 14
+    minute: 30
+    commands:
+      - "say The daily 14:30 task is running."
+  task_weekly:
+    enabled: false
+    type: WEEKLY
+    day-of-week: 1
+    hour: 8
+    minute: 0
+    commands:
+      - "say Weekly Monday task."
+  task_monthly:
+    enabled: false
+    type: MONTHLY
+    day-of-month: 1
+    hour: 12
+    minute: 0
+    commands:
+      - "say First day of the month at noon."
+  task_yearly:
+    enabled: false
+    type: YEARLY
+    month: 1
+    day-of-month: 1
+    hour: 0
+    minute: 0
+    commands:
+      - "say Happy New Year!"
