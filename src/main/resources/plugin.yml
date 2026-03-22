@@ -5,3 +5,8 @@ api-version: 1.13
 authors: [zNotHydr0]
 description: StrafeScheduler 1.0. Created by [zNotHydr0]
 website: www.strafeland.club
+commands:
+  scheduler:
+    description: Main command for StrafeScheduler
+    aliases: [strafescheduler]
+    permission: strafescheduler.admin
