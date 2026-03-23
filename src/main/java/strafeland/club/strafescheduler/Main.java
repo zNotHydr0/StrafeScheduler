@@ -11,6 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 public class Main extends JavaPlugin implements CommandExecutor {
@@ -91,7 +92,7 @@ public class Main extends JavaPlugin implements CommandExecutor {
 
     private void startScheduler() {
         taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(this, () -> {
-            LocalDateTime now = LocalDateTime.now();
+            LocalDateTime now = LocalDateTime.now(ZoneId.of("Europe/Madrid"));
 
             if (now.getMinute() == lastExecutedMinute) {
                 return;
